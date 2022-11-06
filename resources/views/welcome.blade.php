@@ -16,46 +16,29 @@
 
         <link rel="stylesheet" href="/assets/css/output.css">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
+        <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
 
-        <script>
-            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-            } else {
-            document.documentElement.classList.remove('dark')
-            }
-        </script>
+        <script src="/assets/js/dark.js"></script>
     </head>
     <body class="antialiased">
+        @if(session('status'))
+        <div class="mx-auto text-center mb-16 fixed flex-wrap flex" style="left: calc(50% - 200px);
+        ">
+            <div id="status" class="text-base font-semibold text-white justify-center mx-auto text-center items-center bg-primary py-3 px-8 rounded-full mt-20 fixed z-20">
+                {{ session('status') }}
+            </div>
+        </div>
+        @endif
         <x-navbar></x-navbar>
         <x-hero></x-hero>
         <x-about></x-about>
-        <x-portfolio></x-portfolio>
+        <x-project></x-project>
         <x-experience></x-experience>
         <x-blog></x-blog>
         <x-contact></x-contact>
         <x-footer></x-footer>
-        {{-- <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-        </div> --}}
-
+        <x-to-top></x-to-top>
         <script src="/assets/js/script.js"></script>
     </body>
 </html>

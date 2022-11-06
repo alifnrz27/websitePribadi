@@ -13,22 +13,22 @@
                 <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-500 lg:dark:bg-transparent">
                     <ul class="block lg:flex">
                         <li class="group">
-                            <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                            <a href="/" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
                         </li>
                         <li class="group">
-                            <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
+                            <a href="/#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang Saya</a>
                         </li>
                         <li class="group">
-                            <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                            <a href="/#project" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Project</a>
                         </li>
                         <li class="group">
-                            <a href="#experience" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Experience</a>
+                            <a href="/experience" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Experience</a>
                         </li>
                         <li class="group">
-                            <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                            <a href="/blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
                         </li>
                         <li class="group">
-                            <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Kontak</a>
+                            <a href="/#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Kontak</a>
                         </li>
                         <li class="flex items-center pl-8 mt-3 lg:mt-0">
                             <div class="flex">

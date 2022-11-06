@@ -1,7 +1,9 @@
 <x-jet-form-section submit="updateProfileInformation">
-    <x-slot name="title">
-        {{ __('Profile Information') }}
+    <x-slot name="title" class="text-dark dark:text-white">
+        <div class="text-dark dark:text-white">{{ __('Profile Information') }}</div>
     </x-slot>
+
+    <p class="text-dark dark:text-white">Profile Information</p>
 
     <x-slot name="description">
         {{ __('Update your account\'s profile information and email address.') }}
@@ -88,7 +90,7 @@
             {{ __('Saved.') }}
         </x-jet-action-message>
 
-        <x-jet-button wire:loading.attr="disabled" wire:target="photo">
+        <x-jet-button wire:loading.attr="disabled" wire:target="photo" class="bg-primary hover:bg-primary hover:opacity-50 transition duration-300">
             {{ __('Save') }}
         </x-jet-button>
     </x-slot>

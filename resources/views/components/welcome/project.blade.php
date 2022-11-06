@@ -1,4 +1,4 @@
-<section id="portfolio" class="pt-36 pb-16 bg-slate-200 dark:bg-slate-600">
+<section id="project" class="pt-36 pb-16 bg-slate-200 dark:bg-slate-600">
     <div class="container">
         <div class="w-full px-4">
             <div class="max-w-xl mx-auto text-center mb-16">

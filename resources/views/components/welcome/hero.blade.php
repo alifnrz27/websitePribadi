@@ -4,9 +4,9 @@
             <div class="w-full self-center px-4 lg:w-1/2">
                 <h1 class="text-base font-semibold text-primary md:text-xl">Selamat Datang guys ✌, namaku <span class="block font-bold text-dark dark:text-white text-4xl lg:text-5xl">Alif Naufal</span></h1>
                 <h2 class="medium text-secondary dark:text-white text-lg mb-5 lg:text-2xl">Mahasiswa</h2>
-                <p class="font-medium text-secondary mb-10 leading-relaxed">Learn something new</p>
+                <p class="font-medium text-secondary mb-10 leading-relaxed">Robotics, Artificial Intelligence, IoT Enthusiast</p>
 
-                <a href="" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+                <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
             </div>
 
             <div class="w-full self-end px-4 lg:w-1/2">

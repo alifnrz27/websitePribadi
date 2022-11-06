@@ -2,12 +2,24 @@
 window.onscroll = function(){
     const header = document.querySelector('#navbar');
     const fixedNav = header.offsetTop;
+    const toTop = document.querySelector('#toTop');
 
     if(window.pageYOffset > fixedNav){
         header.classList.add('navbar-fixed');
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
     }else{
         header.classList.remove('navbar-fixed');
+        toTop.classList.remove('flex');
+        toTop.classList.add('hidden');
     }
+}
+
+// back to top
+function backToTop(){
+    $('body,html').animate({
+            scrollTop: 0
+        }, 800);
 }
 
 // hamburger
@@ -25,6 +37,7 @@ window.addEventListener('click', function(e){
         navMenu.classList.add('hidden');
     }
 });
+
 
 // dark mode toggle
 const darkToggle = document.querySelector('#dark-toggle');
@@ -47,3 +60,9 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
     darkToggle.checked = false;
 }
+
+// status
+const statusData = document.querySelector('#status');
+setTimeout(function(){
+    statusData.style.display = 'none';
+}, 1000);

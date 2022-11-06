@@ -8,23 +8,24 @@
             </div>
         </div>
 
-        <form action="">
+        <form action="/contact" method="POST">
+            @csrf
             <div class="w-full lg:w-2/3 lg:mx-auto">
                 <div class="w-full mb-8 px-4">
                     <label for="name" class="text-base text-primary font-bold">Nama</label>
-                    <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="text" id="name" name="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                 </div>
                 <div class="w-full mb-8 px-4">
                     <label for="email" class="text-base text-primary font-bold">Email</label>
-                    <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                 </div>
                 <div class="w-full mb-8 px-4">
                     <label for="message" class="text-base text-primary font-bold">Pesan</label>
-                    <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">
+                    <textarea type="text" id="message" name="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32">
                     </textarea>
                 </div>
                 <div class="w-full">
-                    <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                    <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
                 </div>
             </div>
         </form>

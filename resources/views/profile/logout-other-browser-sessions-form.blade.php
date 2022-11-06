@@ -1,6 +1,6 @@
 <x-jet-action-section>
-    <x-slot name="title">
-        {{ __('Browser Sessions') }}
+    <x-slot name="title" class="text-white">
+        <div class="text-dark dark:text-white">{{ __('Browser Sessions') }}</div>
     </x-slot>
 
     <x-slot name="description">
@@ -52,7 +52,7 @@
         @endif
 
         <div class="flex items-center mt-5">
-            <x-jet-button wire:click="confirmLogout" wire:loading.attr="disabled">
+            <x-jet-button class="bg-red-500 hover:bg-red-500 hover:opacity-50 transition duration-500" wire:click="confirmLogout" wire:loading.attr="disabled">
                 {{ __('Log Out Other Browser Sessions') }}
             </x-jet-button>
 
