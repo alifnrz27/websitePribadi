@@ -4,23 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class CardAdmin extends Component
+class CategoryAdmin extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-
-     public $blogs;
-     public $projects;
-     public $categories;
-     public $experiences;
-    public function __construct($blogs, $projects, $experiences, $categories)
+    public $categories;
+    public function __construct($categories)
     {
-        $this->blogs = $blogs;
-        $this->projects = $projects;
-        $this->experiences = $experiences;
         $this->categories = $categories;
     }
 
@@ -31,6 +24,6 @@ class CardAdmin extends Component
      */
     public function render()
     {
-        return view('components.admin.card-admin');
+        return view('components.admin.category-admin');
     }
 }

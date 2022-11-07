@@ -27,9 +27,9 @@
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 lg:mb-1 dark:bg-slate-600">
                     <div class="py-8 px-6">
                         <a href="" class="block  mb-3 font-semibold text-xl text-primary dark:text-white hover:text-primary truncate">
-                            <h3 class="">Tips belajar</h3>
+                            <h3 class="">Total Pengalaman</h3>
                         </a>
-                        <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus.</p>
+                        <p class="font-medium text-base text-secondary mb-6">{{ count($experiences) }}</p>
                     </div>
                 </div>
             </div>
@@ -38,9 +38,9 @@
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 lg:mb-1 dark:bg-slate-600 ">
                     <div class="py-8 px-6">
                         <a href="" class="block  mb-3 font-semibold text-xl text-primary dark:text-white hover:text-primary truncate">
-                            <h3 class="">Tips belajar</h3>
+                            <h3 class="">Total Kategori</h3>
                         </a>
-                        <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus.</p>
+                        <p class="font-medium text-base text-secondary mb-6">{{ count($categories) }}</p>
                     </div>
                 </div>
             </div>

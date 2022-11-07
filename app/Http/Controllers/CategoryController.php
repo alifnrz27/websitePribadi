@@ -73,7 +73,7 @@ class CategoryController extends Controller
 
     public function destroy(Category $category)
     {
-        $checkData = Blog::where(['category_id'])->get();
+        $checkData = Blog::where(['category_id' => $category->id])->get();
         if(count($checkData) > 0){
             return back()->with('status', 'Masih ada postingan yang memiliki kategori '.$category->category);
         }

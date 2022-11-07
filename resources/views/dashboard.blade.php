@@ -18,13 +18,21 @@
                     <hr>
                 </section>
 
-                <x-card-admin :blogs="$blogs" :projects="$projects"/>
+                <x-card-admin :blogs="$blogs" :projects="$projects" :experiences="$experiences" :categories="$categories"/>
 
                 <section>
                     <div class="flex flex-wrap bg-gray-100 dark:bg-dark rounded-lg py-7 px-3">
                         <x-blog-admin :blogs="$blogs"></x-blog-admin>
 
                         <x-project-admin :projects="$projects"></x-project-admin>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="flex flex-wrap bg-gray-100 dark:bg-dark rounded-lg py-7 px-3">
+                        <x-experience-admin :experiences="$experiences"></x-experience-admin>
+
+                        <x-category-admin :categories="$categories"></x-category-admin>
                     </div>
                 </section>
 

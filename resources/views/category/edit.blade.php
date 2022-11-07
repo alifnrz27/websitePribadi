@@ -12,7 +12,7 @@
                         </div>
                     </div>
             
-                    <form action="/category/{{ $slug }}" method="POST">
+                    <form action="/category/{{ $id }}" method="POST">
                         @csrf
                         @method('put')
                         <div class="w-full lg:w-2/3 lg:mx-auto">
