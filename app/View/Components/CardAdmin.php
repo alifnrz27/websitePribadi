@@ -11,9 +11,13 @@ class CardAdmin extends Component
      *
      * @return void
      */
-    public function __construct()
+
+     public $blogs;
+     public $projects;
+    public function __construct($blogs, $projects)
     {
-        //
+        $this->blogs = $blogs;
+        $this->projects = $projects;
     }
 
     /**

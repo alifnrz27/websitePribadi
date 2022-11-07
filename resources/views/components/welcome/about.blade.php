@@ -4,12 +4,12 @@
             <div class="w-full px-4 mb-10 lg:w-1/2 ">
                 <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
                 <h2 class="font-bold text-dark dark:text-white text-3xl mb-5 max-w-md lg:text-4xl">Mahasiswa biasa yang masih belajar</h2>
-                <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus qui minima cupiditate dicta excepturi inventore dolorem!</p>
+                <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Ini adalah catatan kecil ku yang dirangkum dalam sebuah website agar kita bisa saling belajar</p>
             </div>
 
             <div class="w-full px-4 lg:w-1/2">
                 <h3 class="font-semibold text-dark dark:text-white text-2xl mb-4 lg:text-3xl lg:pt-10">Mari berteman</h3>
-                <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto ullam voluptatum amet perspiciatis facilis animi autem est sint!</p>
+                <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Ikuti social media ku, dan infokan hal hal menarik yang bisa dibahas di sini</p>
                 <div class="flex items-center"> 
                     <a href="" terget="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300  hover:border-primary hover:bg-primary hover:text-white">
                         <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>

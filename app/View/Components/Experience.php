@@ -11,9 +11,11 @@ class Experience extends Component
      *
      * @return void
      */
-    public function __construct()
+
+     public $experiences;
+    public function __construct($experiences)
     {
-        //
+        $this->experiences = $experiences;
     }
 
     /**

@@ -7,7 +7,7 @@
                         <a href="" class="block  mb-3 font-semibold text-xl text-primary dark:text-white hover:text-primary truncate">
                             <h3 class="">Total Blog</h3>
                         </a>
-                        <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus.</p>
+                        <p class="font-medium text-base text-secondary mb-6">{{ count($blogs) }}</p>
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                         <a href="" class="block  mb-3 font-semibold text-xl text-primary dark:text-white hover:text-primary truncate">
                             <h3 class="">Total Project</h3>
                         </a>
-                        <p class="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, necessitatibus.</p>
+                        <p class="font-medium text-base text-secondary mb-6">{{ count($projects) }}</p>
                     </div>
                 </div>
             </div>

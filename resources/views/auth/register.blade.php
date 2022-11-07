@@ -1,4 +1,5 @@
 <x-guest-layout>
+    @section('title', 'Register')
     <div id="status" class="container flex justify-content-center">
         <div class="flex fixed mt-40">
             <x-jet-validation-errors class=" fixed mx-auto items-center self-center justify-center bg-white px-5 py-7 rounded-md" />

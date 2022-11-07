@@ -1,4 +1,5 @@
 <x-guest-layout>
+    @section('title', 'Two Factor')
     <x-jet-authentication-card>
         <x-slot name="logo">
             <x-jet-authentication-card-logo />

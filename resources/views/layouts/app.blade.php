@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>@yield('title')</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -20,27 +20,28 @@
         <script src="/assets/js/dark.js"></script>
         <!-- Jquery CDN -->
         <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+        {{-- script for upload image --}}
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.3.x/dist/index.js"></script>
     </head>
     <body class="antialiased dark:bg-dark">
-        {{-- <x-jet-banner /> --}}
-
-        {{-- <div class="min-h-screen bg-gray-100">
-            @livewire('navigation-menu')
-
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
-
-            <!-- Page Content -->
-        </div> --}}
         <x-navbar></x-navbar>
         <main>
+            @if(session('status'))
+                <div class="mx-auto text-center mb-16 fixed flex-wrap flex" style="left: calc(50% - 200px);
+                ">
+                    <div id="status" class="text-base font-semibold text-white justify-center mx-auto text-center items-center bg-primary py-3 px-8 rounded-full mt-20 fixed z-20">
+                        {{ session('status') }}
+                    </div>
+                </div>
+            @endif
             {{ $slot }}
+            {{-- <form action="/blog" method="POST">
+                @csrf
+                <textarea name="content" id="blogEditor" cols="30" rows="10"></textarea>
+                <button type="submit">Kirim</button>
+            </form> --}}
         </main>
         <x-footer></x-footer>
         <x-to-top></x-to-top>
@@ -50,5 +51,25 @@
         @livewireScripts
 
         <script src="/assets/js/script.js"></script>
+        <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+
+        <script>
+            CKEDITOR.replace('blogEditor', {
+                filebrowserUploadUrl: "{{ route('ckeditor.uploadBlogImage', ['_token' => csrf_token()]) }}",
+                filebrowserUploadMethod: 'form'
+            });
+        </script>
+        <script>
+            CKEDITOR.replace('projectEditor', {
+                filebrowserUploadUrl: "{{ route('ckeditor.uploadProjectImage', ['_token' => csrf_token()]) }}",
+                filebrowserUploadMethod: 'form'
+            });
+        </script>
+        <script>
+            CKEDITOR.replace('experienceEditor', {
+                filebrowserUploadUrl: "{{ route('ckeditor.uploadExperienceImage', ['_token' => csrf_token()]) }}",
+                filebrowserUploadMethod: 'form'
+            });
+        </script>
     </body>
 </html>

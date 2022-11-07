@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>alif naufal</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -33,9 +33,9 @@
         <x-navbar></x-navbar>
         <x-hero></x-hero>
         <x-about></x-about>
-        <x-project></x-project>
-        <x-experience></x-experience>
-        <x-blog></x-blog>
+        <x-project :projects="$projects"></x-project>
+        <x-experience :experiences="$experiences"></x-experience>
+        <x-blog :blogs="$blogs"></x-blog>
         <x-contact></x-contact>
         <x-footer></x-footer>
         <x-to-top></x-to-top>

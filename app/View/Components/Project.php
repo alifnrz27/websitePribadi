@@ -11,9 +11,11 @@ class Project extends Component
      *
      * @return void
      */
-    public function __construct()
+
+     public $projects;
+    public function __construct($projects)
     {
-        //
+        $this->projects = $projects;
     }
 
     /**

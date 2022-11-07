@@ -5,14 +5,24 @@
                 <img src="/assets/images/icons/dashboard.png" width="40px" class="mx-auto" alt="">
             </div>
         </a>
-        <a href="" class="">
+        <a href="/project/create" class="">
             <div class="container flex mb-4 py-2 hover:bg-white hover:rounded-lg transition duration-300">
                 <img src="/assets/images/icons/project.png" width="40px" class="mx-auto" alt="">
             </div>
         </a>
-        <a href="" class="">
+        <a href="/blog/create" class="">
             <div class="container flex mb-4 py-2 hover:bg-white hover:rounded-lg transition duration-300">
                 <img src="/assets/images/icons/blog.png" width="40px" class="mx-auto" alt="">
+            </div>
+        </a>
+        <a href="/experience/create" class="">
+            <div class="container flex mb-4 py-2 hover:bg-white hover:rounded-lg transition duration-300">
+                <img src="/assets/images/icons/experience.png" width="40px" class="mx-auto" alt="">
+            </div>
+        </a>
+        <a href="/category/create" class="">
+            <div class="container flex mb-4 py-2 hover:bg-white hover:rounded-lg transition duration-300">
+                <img src="/assets/images/icons/subfolder.png" width="40px" class="mx-auto" alt="">
             </div>
         </a>
         <a href="/user/profile" class="">

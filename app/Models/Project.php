@@ -8,4 +8,23 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'slug',
+        'title',
+        'content',
+        'image',
+        'is_active',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }
