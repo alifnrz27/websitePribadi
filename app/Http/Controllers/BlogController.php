@@ -19,8 +19,13 @@ class BlogController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $data['blogs'] = Blog::where(['is_active' => 1])->latest()->get();
+    { 
+        $data['title']='';
+        if(request('category')){
+            $category = Category::firstWhere('slug', request('category'));
+            $data['title'] = ' in '.$category->category;
+        }
+        $data['blogs'] = Blog::where(['is_active' => 1])->latest()->filter(request(['search', 'category']))->get();
         return view('blog.index', $data);
     }
 

@@ -1,5 +1,5 @@
 <x-guest-layout>
-    @section('title', '{{ $blog->title }}')
+    @section('title', "{{ $blog->title }}")
     <div class="container pt-36">
         {{-- menampilkan foto utama --}}
         <div class="w-full self-center px-4">
@@ -14,11 +14,7 @@
             <div class="w-full self-center px-6 lg:w-3/4">
                 <h1 class="text-3xl mb-5 font-semibold text-primary">{{ $blog->title }}</h1>
                 <div class="flex flex-wrap">
-                    <a href="" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-3 mx-2">Teknologi</a>
-                    <a href="" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-3 mx-2">Teknologi</a>
-                    <a href="" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-3 mx-2">Teknologi</a>
-                    <a href="" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-3 mx-2">Teknologi</a>
-                    <a href="" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-3 mx-2">Teknologi</a>
+                    <a href="/blog?category={{ $blog->category->slug }}" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out mb-3 mx-2">{{ $blog->category->category }}</a>
                 </div>
                 <div class="font-medium text-secondary dark:text-white my-5 leading-relaxed">
                     {!! $blog->content !!}

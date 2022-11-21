@@ -1,10 +1,10 @@
 <x-guest-layout>
-    @section('title', '{{ $category->category }}')
+    @section('title', '{{ $blogs[0]->category->category }}')
     <section id="category" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Kategori</h4>
+                    <h4 class="font-semibold text-lg text-primary mb-2">Kategori {{ $blogs[0]->category->category }}</h4>
                 </div>
             </div>
 

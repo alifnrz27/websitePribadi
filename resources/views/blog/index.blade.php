@@ -4,16 +4,20 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+                    <h4 class="font-semibold text-lg text-primary mb-2">Blog{{ $title }}</h4>
                     <h2 class="font-bold text-dark dark:text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan terbaru</h2>
                 </div>
             </div>
     
             <div class="container mx-0">        
                 <form action="">
+                    @csrf
                     <div class="mx-auto">
                         <div class="w-full mb-8 px-4">
-                            <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="Search" autocomplete="off">
+                            @if(request('category'))
+                            <input type="hidden" name="category" value="{{ request('category') }}">
+                            @endif
+                            <input type="text" id="search" name="search" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="Search" value="{{ request('search') }}" autocomplete="off">
                         </div>
                         <div class="w-full">
                             <button type="submit" class="hidden text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Cari</button>

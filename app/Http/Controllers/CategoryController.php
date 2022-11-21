@@ -21,10 +21,7 @@ class CategoryController extends Controller
 
     public function show(Category $category)
     {
-        if($category->is_active == 0){
-            return abort(404);
-        }
-        $data['blogs']= Blog::where(['category_id' => $category->id, 'is_active' => 1])->with('user')->get();
+        $data['blogs']= Blog::where(['category_id' => $category->id, 'is_active' => 1])->with(['category', 'user'])->latest()->get();
         return view('category.show', $data);
     }
 

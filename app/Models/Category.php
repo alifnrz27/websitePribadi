@@ -12,4 +12,13 @@ class Category extends Model
         'category',
         'slug',
     ];
+
+    public function blogs(){
+        return $this->hasMany(Blog::class);
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

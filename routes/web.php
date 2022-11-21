@@ -57,6 +57,9 @@ Route::middleware([
 Route::get('/blog',[BlogController::class, 'index']);
 Route::get('/blog/{blog}',[BlogController::class, 'show']);
 
+Route::get('/category',[CategoryController::class, 'index']);
+Route::get('/category/{category}',[CategoryController::class, 'show']);
+
 Route::get('/project',[ProjectController::class, 'index']);
 Route::get('/project/{project}',[ProjectController::class, 'show']);
 
